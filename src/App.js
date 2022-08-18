@@ -4,7 +4,6 @@ import Products from "./component/Products"
 function App() {
   return (
     <div className="App">
-      HELLO
       <Products />
     </div>
   );

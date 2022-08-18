@@ -8,49 +8,49 @@ const Product = [
         },
         {
             name: "Fossil",
-            img: "",
+            img: "/images/fossil.jpg",
             price: 15000,
             type: "Analog"
         },
         {
             name: "Casio",
-            img: "",
+            img: "/images/casio.jpg",
             price: 12000,
             type: "Digital"
         },
         {
             name: "Timex",
-            img: "",
+            img: "/images/timex.jpg",
             price: 3000,
             type: "Analog"
         },
         {
             name: "Fastrack",
-            img: "",
+            img: "/images/fastrack.jpg",
             price: 2000,
             type: "Digital"
         },
         {
             name: "Chumbak",
-            img: "",
+            img: "/images/chumbak.jpg",
             price: 1500,
             type: "Analog"
         },
         {
             name: "Citizen",
-            img: "",
+            img: "/images/citizen.jpg",
             price: 2000,
             type: "Analog"
         },
         {
             name: "Montblanc",
-            img: "",
+            img: "/images/montblanc.jpg",
             price: 5000,
             type: "Analog"
         },
         {
             name: "Swatch",
-            img: "",
+            img: "/images/swatch.jpg",
             price: 2000,
             type: "Digital"
         }
