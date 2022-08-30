@@ -1,29 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import Product from "../data/Product_data";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Cards from "./Cards";
 import "./products.css";
-const Products = ()=>{
-    const renderCard = (card, index) =>{
-        return(
-            <div>
-                <Card style={{ width: '18rem' }} key={index} className="box">
-                    <Card.Img variant="top" className="img-top" src={card.img} />
-                    <Card.Body>
-                        <Card.Title>{card.name}</Card.Title>
-                        <Card.Text>
-                            {"Rs."+card.price}
-                        </Card.Text>
-                        <Button variant="primary">Add to Cart</Button>
-                    </Card.Body>
-                </Card>
-            </div>
-        )
-    }
+const Products = ({handleClick})=>{
+    
     return(
-        <div className="grid">
-            {Product.map(renderCard)}
-        </div>
+        <section>
+            {Product.map((item) => (
+                <Cards key={item.id} item={item} handleClick={handleClick} />
+            ))}
+        </section>
     )
 }
 export default Products;
